@@ -1,3 +1,4 @@
 
 protocol = 'https'
-domen = 'e.mail.ru'
+farm = 'e.mail.ru'
+auth_farm = 'auth.mail.ru'
