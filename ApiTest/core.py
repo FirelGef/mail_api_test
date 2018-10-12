@@ -1,0 +1,3 @@
+
+class CoreTests:
+    pass
