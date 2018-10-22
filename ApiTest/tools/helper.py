@@ -2,6 +2,7 @@ import requests
 
 from cfg.prod_conf import *
 
+
 class Helper:
     @classmethod
     def setup_helper(self, login, domain, password):
@@ -33,8 +34,10 @@ class Helper:
 
         response = helper.get('{0}://{1}/api/v1/{2}?{3}'.format(protocol, farm, endpoint, requests_params))
 
-        if response.json()['status'] != 200:
-            raise RuntimeError('Failed to get {0}. {0} response: {1}'.format(endpoint, response.json()))
+        if response.status_code != 200:
+            raise RuntimeError(
+                'Failed to get {0}. {0} status_code: {1}, text: {2}'.format(endpoint,
+                                                                            response.status_code,
+                                                                            response.text))
 
         return response.json()
-
