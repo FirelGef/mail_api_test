@@ -1,4 +1,11 @@
 #----------------------------------------------------------------------------------------------------------------------#
 Hello!
 This is a description of my framework.
-This structure was created and continues to be supported by me in order to recall the python3 and pytest library.
+This demo structure was created by me in order to recall the python3 and pytest library.
+
+pip install:
+>> pytest
+>> prettytable
+TODO:
+>> ADD LOGGING
+>> ADD Comments
